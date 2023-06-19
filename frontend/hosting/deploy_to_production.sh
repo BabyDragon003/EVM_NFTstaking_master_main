@@ -3,6 +3,12 @@
 # Deployment name
 DEPLOYMENT_ARCHIVE="production.tar"
 
+# Deployment host
+DEPLOYMENT_USER="production"
+DEPLOYMENT_HOST="192.53.166.110"
+DEPLOYMENT_SSH="${DEPLOYMENT_USER}@${DEPLOYMENT_HOST}"
+
+# Verify build output available
 if [ ! -e ../build ]; then
   echo "Build output missing at ../build. Quitting."
   exit
